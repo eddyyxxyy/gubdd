@@ -1,0 +1,55 @@
+Uma pizzaria de tele-entrega apresenta um cardápio composto por diversos tipos de pizza, cujos dados são: número do item, nome da
+pizza, lista de ingredientes e preços das pizzas pequena, média e grande, como por exemplo: (12, francesa, (queijo, presunto,
+champignon, aspargo), 10.00, 15.00, 18.00).
+
+Na pizzaria trabalham funcionários que emitem pedidos de pizzas. Cada pedido possui um número e uma data de emissão, além do nome, telefone e endereço do cliente que solicitou o pedido. 
+
+Um pedido, emitido por apenas um funcionário, é composto por vários itens: cada item possui um número e se refere a uma determinada pizza do cardápio,
+em um determinado tamanho (pequena, média ou grande) e em uma certa quantidade.
+
+Dos funcionários entregadores (ou seja, responsáveis pela entrega de um ou mais pedidos), deve-se saber o número do telefone celular para um eventual contato durante uma
+entrega.
+
+Uma entrega destina-se a um bairro, e para cada bairro existe um tempo máximo de espera para a entrega de um pedido.
+
+Defina outras entidades/atributos que julgar relevante. 
+
+pizzas (id, nome)
+
+ingredientes (id, nome)
+
+pizzas_ingredientes (id, id_pizza, id_ingrediente)
+
+precos (id, tamanho, preco)
+
+pizzas_precos (id, id_pizza, id_preco)
+
+pedidos (id, data, hora, status, id_cliente, id_atendente, id_entregador, id_bairro)
+
+OBS.: O atributo STATUS, refere-se a cada estágio em que o pedido se encontra.
+
+          Cliente faz o pedido - Status: atendendo
+
+          Entregador saiu para entrega - Status: entregando
+
+          Entregador confirma a entrega - Status: finalizado
+
+          Cliente cancele o pedido - Status: cancelado
+
+clientes (id, id_cep, nome, numero, complemento)
+
+telefones (id, numero, descricao, id_cliente)
+
+pedidos_pizzas (id, quantidade, id_pizza, id_pedido)
+
+funcionarios (id, nome, telefone, id_funcao)
+
+funcoes (id, funcao)
+
+bairros (id, ceps_id, tempo_espera, taxa_entrega)
+
+ceps (id, cep, logradouro, bairro, cidade, estado)
+
+recibos (id, desconto, valor, pedidos_id)
+
+formas_pagamentos (id, forma_pagamento, data, valor, id_recibo)
