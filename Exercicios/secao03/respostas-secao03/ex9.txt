@@ -1,0 +1,3 @@
+9 - O que é o MER - Modelo de Entidade e Relacionamento?
+
+O MER é utilizado para descrever objetos do mundo real através de entidades, com suas propriedades que são atributos e os seus relacionamentos.

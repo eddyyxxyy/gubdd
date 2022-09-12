@@ -1,0 +1,3 @@
+7 - Defina a Segunda Forma Normal:
+
+Uma entidade só poderá estar na Segunda Forma Normal caso já esteja de acordo com a Primeira Forma Normal. Ela consiste em verificar e corrigir os campos para que todos sejam completamente dependentes de sua chave primária, dependentes do campo de chave primária.

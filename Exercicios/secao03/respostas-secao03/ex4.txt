@@ -1,0 +1,5 @@
+4 - Explique a Cardinalidade Máxima e Mínima entre relações;
+
+A Cardinalidade Máxima define a quantidade máxima de ocorrências entre as entidades, podendo ser de 1 para 1, 1 para muitos e muitos para muitos. Quando temos uma cardinalidade máxima que caracteriza uma relação de muitos para muitos, criamos uma nova entidade que representa essa relação, onde a primeira entidade se relaciona de 1 para muitos e a segunda também, se relacionando com essa entidade que representa a relação entre essas duas tabelas (a 1 e a 2, a terceira é somente a entidade de relação entre elas).
+
+A Cardinalidade mínima define a quantidade mínima de ocorrências de uma relação entre as entidades (em caráter obrigatório). Por exemplo, um vendedor ocupa um escritório e é OBRIGATÓRIO QUE ELE TENHA UM ESCRITÓRIO, lê-se então no mínimo UM, no máxim UM; Um escritório pode ser ocupado por um único vendedor, porém pode ser a sala ainda esteja vazia, lê-se no mínimo Zero, no máximo Um.

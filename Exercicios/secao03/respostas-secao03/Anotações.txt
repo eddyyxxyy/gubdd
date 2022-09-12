@@ -1,0 +1,26 @@
+O modelo conceitual é o que define quais dados são necessários ter nas tabelas, é quando fazemos os diagramas de entidade relacionamento e/ou de classes.
+O modelo lógico é o que define qual tecnologia será usada, de banco de relacional ou não relacional, quais são as chaves e atributos de cada entidade identificada no modelo conceitual e seus relacionamentos.
+O modelo físico é também chamado de modelo de implementação, onde comumento utilizamos o SQL para construir as tabelas definidas nos modelos anteriores, consolidando suas relações.
+
+A Entidade é uma tabela, é um objeto ou evento do mundo sobre o qual desejamos manter registros em um banco de dados;
+
+Atributo é uma propriedade ou característica que descreve uma entidade, a partir do momento que temos uma entidade ela tem de ter atributos, os atributos serão os campos (colunas) das tabelas que irão armazenar os dados;
+
+Atributo chave: é a primary key, chave primária ou pk, é um campo que deve possuir valor único sem repetição em todo o conjunto de dados da entidade. Através dele podemos encontrar os valores do campo que pertence.
+
+Relacionamentos são as associações entre as tabelas/entidades e pode se ter relações entre uma, duas ou várias entidades ao mesmo tempo.
+
+Chave estrangeira: é a foreign key ou fk, é um dos atributos presentes numa entidade/tabela que faz referência e estabelece uma relação com a chave primária de outra entidade/tabela.
+
+Grau de Relacionamento: indica a quantidade de entidade ligadas a um relacionamento. Os principais graus são: unário, binário e ternário.
+- Unário: chamado de grau 1, uma entidade se relaciona com ela mesma.
+- Binário: chamado de grau 2, uma entidade se relaciona com outra entidade. É o tipo mais comum de relacionamento.
+- Ternário: chamado de grau 3, três entidades estão relacionadas por um mesmo relacionamento.
+De toda forma, não é limitado aos três grais, podemos ter mais entidades relacionadas à um mesmo relacionamento.
+
+Cardinalidade (Máxima): define a quantidade máxima de ocorrências de uma entidade que poderá estar associada a outra entidade. Um vendedor pode vender apenas um tipo de produto? Ou dois? Ou três?
+Um produto pode ser vendido por apenas um vendedor? Ou por todos?
+
+Temos duas Formas de Representação:
+- Clássico: que representa com números e símbolos;
+- Pé de galinha: que representa por meio somente de símbolos.

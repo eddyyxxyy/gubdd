@@ -1,0 +1,66 @@
+O que precisamos fazer?
+
+1 - Encontrar entidades;
+2 - Definir os atributos;
+3 - Definir os relacionamentos;
+
+====================================================================
+
+# Linha para contextualizar a empresa:
+
+Uma empresa fabricante de picolés deseja armazenar informações acerca de seus negócios.
+====================================================================
+
+
+[1] - Os picolés fabricados são divididos em normal (com água) e ao leite. As informações
+comuns armazenadas dos picolés são: sabor, ingredientes, preço e tipo da embalagem.
+
+Entidades: 
+- Picoles (id, id sabor, preço e id tipo da embalagem);
+- Sabor (id, nome)
+- Tipos de picoles (id, nome);
+- Tipo da embalagem (id, nome);
+- Ingredientes (id, nome);
+- Ingredientes do Picolé (id, id ingrediente, id picole);
+
+OBS: um picolé pode ter vários ingredientes;
+
+--------------------------------------------------------------------------------------------------------------------
+
+[2] - Especificamente,picolés normais possuem um conjunto de aditivos nutritivos (vitaminas ou sais minerais)
+cada um com nome e fórmula química; e picolés ao leite contêm um conjunto de conservantes,
+cada um com nome e descrição.
+
+Entidade:
+- Aditivos Nutritivos (id, nome, fórmula química);
+- Aditivos Nutritivos Picole (id, id Aditivo Nutritivo Picole, id picole);
+- Conservantes (id, nome, descricao);
+- Conservantes Picole (id, id Conservantes, id picole).
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+[3] - Os dois tipos de picolés são vendidos em lotes exclusivos (ou normais, ou ao leite) para os revendedores e 
+cada venda gera uma nota fiscal que pode conter um ou vários lotes. As notas fiscais possuem data, valor, 
+número de série e descrição.
+
+Entidades:
+- Lotes (id, id Tipo de Picolés, quantidade de picolés)
+- Nota Fiscal (id, data, valor, número de série, descricao, id revendedor);
+- Lotes Nota Fiscal (id, id do lote, id da nota fiscal);
+
+--------------------------------------------------------------------------------------------------------------------
+
+[4] - Todo revendedor possui uma pessoa de contato para eventuais resoluções de problemas,
+além disso, armazena-se do revendedor o CNPJ e a razão social.
+
+Entidades:
+- Revendedor (id, cnpj, razão social, contato);
+
+
+=====================================================================
+
+# Linha para contextualizar o objetivo final da modelagem:
+
+Deseja-se obter relatórios sobre as vendas mensais dos picolés de cada tipo e quais revendedores
+compraram mais picolés nos últimos meses.

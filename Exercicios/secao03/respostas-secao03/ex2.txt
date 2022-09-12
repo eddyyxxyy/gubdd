@@ -1,0 +1,5 @@
+2 - Defina Modelagem Lógica;
+
+Este modelo descreve como os dados serão armazenados no banco de dados e também seus relacionamentos.
+Neste modelo, ainda pode ser definida a tecnologia que será utilizada para armazenagem dos dados: Bancos de Dados Relacionais ou Bancos de Dados Não Relacionais.
+Temos, por exemplo, a definição dos nomes de tabela, suas colunas e exemplificação dos dados que serão armazenados, além da definição das chaves de cada registro.

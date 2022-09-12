@@ -1,0 +1,3 @@
+5 - O que é a Normalização de Dados? 
+
+É o processo formal, de passo a passo, que examina o documento descritivo gerado pelos analistas de sistemas para definir as entidades, seus atributos, chaves primárias e estrangeiras e seus relacionamentos. Tem como um de seus objetivos principais a normalização das entidades, a criação de um padrão que evita anomalias e inconsistências que podem ocorrer durante a inclusão, exclusão, alteração e consulta dos registros em um banco de dados. Reduzindo o trabalho de manutenção e evita o desperdício do espaço de armazenamento, dentre outros benefícios.

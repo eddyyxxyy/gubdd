@@ -1,0 +1,69 @@
+Banco de Dados 
+Relacional x Nâo Relacional
+     SQL    x      NoSQL
+
+SQL = Structured Querry Language
+NoSQL = Not only Structered Querry Language
+
+# Observação: nota-se que o "No" significa "Not only" e não "No" simplesmente, a sigla só demonstra como os bancos de dados podem utilizar SQL ou não, ou algo diferente talvez.
+Geralmente possui comandos diferenciados.
+
+
+Banco de Dados Relacionais:
+
+- Conceito criado por Edgar Frank Codd em 1970, sendo descrito no artigo "Relational Model of Data for Large Shared Data Banks";
+
+- Baseado no Modelo Relacional, onde os dados estão guardados entre tabelas que, por sua vez, podem ou não estar relacionadas;
+
+- Uma tabela tem nome, suas respectivas colunas nomeadas e dados inseridos em cada linha na respectiva coluna que pertence;
+
+- É o modelo de Banco de Dados mais utilizado no mundo.
+
+Pontos fortes dos Bancos de Dados Relacionais:
+
+- Os SGBDs (Sistemas Gerenciadores de Bancos de Dados), conforme são chamados, oferecem aos usuários processos de validação, verificação e garantias de integridade dos dados;
+	- Validação: validação dos dados;
+	- Verificação: verificação dos dados;
+	- Garantias de integridade: garantias de integridade dos dados
+
+- Além disso, oferecem controle de concorrência, recuperação de falhas e segurança, controle de transações, otimização de consultas, dentre outros.
+
+	- Concorrência: imagine vários usuários tentando gravar ou fazer a leitura de dados simultâneamente, quem cuida das operações para que ocorram da melhor forma é o SGBD;
+
+	- Controle de transações: transações são toda e qualquer ação realizada no Banco de Dados, onde pode haver uma deleção, gravação ou leitura de dados, os SGBDs controlam isso de forma concreta.
+
+Pontos fracos dos Bancos de Dados Relacionais:
+
+- Dificuldade em conciliar o modelo relacional com a demanda por escalabilidade cada vez mais frequente, quanto maior a demanda mais difícil é contruir a escalabilidade;
+
+- Dificuldade em se organizar os dados em um sistema distribuído trabalhando com particionamento de dados, pois particionar os dados é difícil em um Banco de Dados Relacional.
+
+
+Bancos de Dados Não Relacional:
+
+- O termo NoSQL surgiu em 1998, a partir de uma solução de banco de dados que não oferecia uma interface SQL, mas ainda assim estava baseado inicialmente na arquitetura relacional;
+
+- Posteriormente, o termo passou a representar soluções que promoviam uma alternativa ao Modelo Relacional, tornando-se uma abreviação de Not Only SQL - Não apenas SQL;
+
+- O grande diferencial aqui é a performance, pois por não utilizar um modelo estruturado em tabelas, consegue-se trabalhar com os dados de forma muito mais rápida.
+
+Características em comum com outros bancos não relacionais:
+
+- Como são livres do modelo relacional, promovem alta disponibilidade e maior escalabilidade.
+
+Algumas implementações oferecem:
+
+- O particionamento e a replicação de dados;
+- SIstemas baseados em armazenamento de chave/valor;
+- Sistemas orientados a documentos;
+- Sistemas orientados a coluna;
+- Sistems baseados em grafos, na teoria dos Grafos;
+- etc...
+
+
+
+Modelos:
+
+Relacional: SQL, linhas e colunas, as colunas são os campos da tabela, as linhas são os dados.
+
+Não Relacional: key-value ou Document (onde cada tabela é um documento).

@@ -1,0 +1,4 @@
+3 - Defina Modelagem Física;
+
+Também é chamado de Modelo de Implementação, descreve, por meio de alguma linguagem (comumente SQL), como será feita a armazenagem do banco.
+Neste nível se escolhe qual Sistema Gerenciador de Banco de Dados (SGDB) será utilizado, levando em consideração o modelo lógico adotado.

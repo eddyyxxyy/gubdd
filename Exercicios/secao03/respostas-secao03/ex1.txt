@@ -1,0 +1,6 @@
+1 - Defina Modelagem Conceitual;
+
+Um modelo de dados não diz quais dados estão armazenados no banco de dados, mas sim quais tipos de dados as tabelas/entidades contém. É o modelo de mais alto nível, o modelo conceitual, mais próximo ao usuário. Tem alto nível de abstração à partir dos requisitos extraídos pelos analistas de sistemas.
+É um modelo que pode ser elaborado de forma textual ou por meio de dois diagramas: Diagrama/Modelo de Entidade e Relacionamento (DER/MER) e/ou Diagrama de Classes*.
+
+*Diagramas UML - Unified Modeling Language (Linguagem de Modelagem Unificada).

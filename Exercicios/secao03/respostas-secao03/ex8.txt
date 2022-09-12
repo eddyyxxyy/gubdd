@@ -1,0 +1,3 @@
+8 - Defina a Terceira Forma Normal;
+
+Eliminaremos os campos que podem ser obtidos pela equação de outros campos da mesma tabela. Por exemplo, o valor unitário de um produto não precisa estar na tabela do pedido com uma certa quantidade daquele produto, pois o valor total da compra depende da equação Valor_Unit que está na tabela produto, que será acessado por meio de uma chave estrangeira que identifica esse produto na tabela pedido, que então será multiplacada pelo campo quantidade da entidade pedido, assim gerando o Valor_Total da compra.

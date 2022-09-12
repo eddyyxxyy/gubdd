@@ -1,0 +1,32 @@
+Dado: Elemento bruto geralmente proveniente de uma entrada do usuário ou de outros sistemas.
+Informação: Elemento processado (lapidado) constituído de dados.
+
+Dado x Informação
+
+Dados:
+
+1200   100
+Oeste  Ricardo Alves
+79154  Sapatos
+
+Informação:
+__________________________________________
+| Relatório Mensal de Vendas - Região Oeste        |
+|------------------------------------------------------------------------|
+| Vendedor: Ricado Alves                                     |
+| Código do Empregado: 79154                             |
+|-------------------------------------------------------------------------|
+| Item            |    Quantidade      |     Preço unitário |
+|-------------------------------------------------------------------------|
+| Sapatos      |         1200           |        R$100,00    |
+---------------------------------------------------------------------------
+
+Os dados lapidados são entregues à alguém em forma de informação!
+
+Á partir do momento que alguém pega uma informação, essa informação pode, ou não, gerar conhecimento.
+
+Se não é possível absorver a informação que está sendo passada, ela não gerará conhecimento. E esse conhecimento, se adquirido, pode ser utilizado para aprimorar diversos aspectos, para a tomada de decisão por exemplo.
+
+Caso houvesse o dado sobre a data desse relatório e, se fosse posto esse dado na informação, poderiamos, por exemplo, tomar a decisão de investir mais nessa região Oeste AGORA.
+
+Muitas empresas tem muitos dados, mas nem todas produzem a informação. E ainda assim, da informação que é produzida, nem toda informação gera conhecimento!

@@ -1,0 +1,3 @@
+Quando utilizamos Bancos de Dados, relacionais ou não relacionais, estamos trabalhando com uma arquitetura Cliente-Servidor.
+
+Temos duas pontas, dos usuários e dos servidores, e por exemplo podemos ter uma Database e um Web server que são os servidores dos clientes que se conectam.

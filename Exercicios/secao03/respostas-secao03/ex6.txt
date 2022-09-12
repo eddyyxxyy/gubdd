@@ -1,0 +1,3 @@
+6 - Defina a Primeira Forma Normal:
+
+Também conhecida como 1FN. Consiste em não permitir campos multivalorados em uma tabela/entidade, fazer com que seus campos possuam atomicidade, ou seja, terem dados inseridos sendo únicos e simples.

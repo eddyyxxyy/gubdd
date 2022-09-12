@@ -1,0 +1,3 @@
+10 - O que é o DER - Diagrama de Entidade e Relacionamento?
+
+O DER é a representação gráfica do MER. Irá representar graficamente as entidades, seus atributos e relacionamentos.

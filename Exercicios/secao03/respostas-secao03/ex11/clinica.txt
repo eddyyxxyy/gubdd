@@ -1,0 +1,41 @@
+CONTEXTUALIZAÇÃO:
+
+Em uma clínica trabalham médicos de diversas especialidades.
+
+===============================================
+
+[1]: Cada médico é identificado pelo seu CRM, possui um nome e recebe um salário na clínica.
+
+Entidades:
+-Médicos (id, CRM, Nome, Salário, id_Especialidades)
+
+======================================================================
+
+[2]: Um médico pode ter formação em diversas especialidades (ortopedia, traumatologia, etc) mas só exerce uma delas na clínica.
+
+Entidades:
+- Especialidades (id, Nome, id_médico)
+
+===========================================================================
+
+[3]: Para todo paciente internado na clínica são cadastrados alguns dados pessoais: nome, RG, CPF, endereço, telefone(s) para contato e data de nascimento.
+
+Entidades:
+- Pacientes (id, Nome, RG, CPF, Rua, Bairro, Cidade, Estado, id_Quartos, id_Médicos)
+- Telefones (id, id_Pacientes, Telefone)
+
+===========================================================================
+
+[4]: Um paciente tem sempre um determinado médico como responsável (com um horário de visita diário predeterminado), porém vários outros médicos podem participar do seu tratamento.
+
+Entidades:
+- Tratamentos (id, id_Pacientes, id_Médicos, horario_visita_diária)
+
+=============================================================================
+
+[5]: Pacientes estão sempre internados em quartos individuais, que são identificados por um número e ficam em um andar da clínica.
+
+Entidades:
+- Quartos (id, Número, Andar, id_Pacientes)
+
+=============================================================================
