@@ -1,0 +1,61 @@
+Uma empresa de reparo de automóveis pretende implementar um sistema para administrar a informação relativa aos reparos efetuados nos veículos de seus clientes. O sistema de informação deverá permitir manter um registro de todos os reparos efetuados. 
+
+
+A empresa registra as seguintes informações de cada cliente: código de identificação, nome, endereço, telefone. 
+
+
+A informação relativa aos veículos que um dado cliente teve ou tem e as datas em que fizeram o primeiro reparo, também são importantes.
+
+
+Em relação aos funcionários da oficina é necessário registrar a seguinte informação: código de identificação, nome, endereço, telefone e categoria profissional.
+
+
+O custo/hora da mão-de-obra depende da categoria do funcionário e é definido por meio de uma tabela que é atualizada regularmente.
+
+
+Em relação a cada reparo é necessário saber: qual veículo, qual cliente, a data em que o reparo foi efetuado e o custo total do reparo.
+
+
+A empresa pretende saber para cada reparo quais peças foram utilizadas e o seu preço, bem como o tempo de mão de obra gasto por cada funcionário e o respectivo custo.
+
+
+A informação relativa às peças em estoque deverá ser: código de identificação, designação, custo unitário e quantidade armazenada.
+
+==============================================================================================================================================================
+
+
+Entidades:
+
+- cadastros (id, nome, cpf, rg)
+
+- ceps (id, id_cadastros, cep, logradouro, numero, bairro, cidade, estado)
+
+- telefones (id, numero, id_cadastros)
+
+- e-mail (id, email, id_cadastros)
+
+- veiculos (id, id_modelos, placa, ano_fabricacao)
+
+- modelos (id, nome, id_fabricante)
+
+- fabricantes (id, nome)
+
+- clientes_veiculos(id, id_clientes, id_veiculos, situacao)
+
+- ordens_de_servicos (id, id_cliente, id_veiculo, data, valor)
+
+- servicos_da_pretados (id, id_ordem_de_servico, id_servicos, id_funcionario, horas_trab)
+
+- servicos (id, nome, descricao)
+
+- funcionarios (id, id_cadastros, id_categorias)
+
+- categorias_profissionais (id, nome, descricao)
+
+- custo_por_hora (id, id_funcao, valor)
+
+- pecas_utilizadas (id, id_ordens_de_servicos, id_pecas, quantidade)
+
+- pecas (id, nome, estoque, custo_unitário, designação)
+
+- designação (id, designação)
