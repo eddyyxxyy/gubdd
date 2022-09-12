@@ -1,0 +1,31 @@
+CONTEXTO:
+
+Uma garagem para estacionamento de veículos pretende implementar um sistema que lhe permita administrar a informação relativa ao estacionamento dos seus clientes.
+
+==============================================================================================================================
+
+1 - A garagem é composta por um conjunto de vagas cada uma podendo estar ocupada ou não. Há dois tipos de vagas: avulsa (se houver disponibilidade) ou mensal.
+Cada vaga tem um preço – a avulsa tem um custo por hora e o mensal um custo fixo. 
+
+ENTIDADES:
+
+- vagas (id, id_tipo_de_vaga, numero, ocupada)
+- vagas_mensais (id, id_vaga, id_cliente)
+- tipo_de_vaga (id, id_tipo_veiculos, tipo, valor)
+
+
+
+2 - Os preços serão diferenciados de acordo com o tipo de veículo: automóvel ou moto.
+
+- veiculos (id, marca, modelo, placa, id_tipo_veiculos)
+- tipo_veiculos (id, descricao)
+
+3 - Cada vaga mensal possui um cliente associado. Para cada cliente é registrado seu nome e CPF, sendo que um dado cliente pode contratar várias vagas mensais.
+
+- clientes (id, nome, cpf)
+- veiculos_clientes (id, id_clientes, id_veiculos)
+
+A cada vez que um cliente estacionar um veículo (fizer uma estacionagem), deverá se armazenar o CPF do cliente, código da vaga, a data/hora de entrada e de saída, a placa do veículo estacionado e o custo gerado (que pode ser 0 para clientes mensais).
+
+- estacionagem_entradas (id, id_clientes, id_vagas, entrada)
+- estacuibagen_saidas (id, id_estacionagem_entradas, saida, custo)
