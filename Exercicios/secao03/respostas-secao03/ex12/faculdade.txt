@@ -35,3 +35,24 @@ de ano de início e de término.
 =================================================================================================
 
 A base de dados deve permitir a geração de listas de notas para cada turma, onde deve constar com que professor um aluno fez qual disciplina.
+
+
+Entidades:
+
+- Cursos (id, nome)
+- Cursos_Disciplinas (id, id_Cursos, id_Disciplinas)
+- Disciplinas (id, nome)
+- Disciplinas_Pre_Requisitos (id, tipo, id_Disciplinas, id_Disciplinas_Pre_Requisitos)
+- Pessoas (id, nome, cpf)
+- Alunos (id, id_Pessoas, tipo_graduação)
+- Funcionarios (id, id_Pessoas, salario)
+- Professores (id, id_Funcionarios, id_Títulos)
+- Funcionarios_Professores (id, id_Funcionarios, id_Professores)
+- Títulos (id, nome)
+- Turmas (id, nome, semestre, id_Professores)
+- Professores_Turmas (id, id_Professores, id_Turmas)
+- Numeros_Funcionais (id, tipo)
+- Pessoas_Numeros_Funcionais (id, id_Pessoas, id_Numeros_Funcionais)
+- Matriculas (id, id_Alunos, id_Cursos, id_Status, ano_inicio)
+- Status (id, nome)
+- Conclusoes (id, id_Matriculas, ano_termino)
