@@ -1,0 +1,34 @@
+DML - Data Manipulation Language
+
+No subgrupo DML nó temos 3 comandos SQL:
+
+- INSERT: Para inserir dados numa coluna/campo/registro de uma tabela existente.
+- UPDATE: Para alterar valores de dados em uma ou mais colunas/campos/registros de uma tabela.
+- DELETE: Usado para remover registros de uma tabela.
+
+
+INSERT:
+
+INSERT INTO tipos_produto (descricao) VALUES ('Notebook');
+(Estamos inserindo o valor 'Notebook' na tabela 'tipos_produto'. O campo 'código' é chave primária e é auto incremento, então será inserido automaticamente)
+
+
+UPDATE:
+
+UPDATE tipos_produto set descricao = 'Nobreak' WHERE codigo = 3;
+(Estamos atualizando um registro na tabela 'tipos_produto', e note que estamos utilizando o filtro com a cláusula WHERE especificando qual registro queremos atualizar, ou seja, onde o código for igual a 3)
+
+UPDATE produtos set descricao = 'Notebook', preco = 2800 WHERE codigo = 20;
+
+OBS: CUIDADO COM O COMANDO UPDATE.
+
+UPDATE produtos set descricao = 'Notebook', preco = 2800;
+(DESTA FORMA TODOS OS REGISTROS SÃO AFETADOS, VOCÊ PERDERÁ SEU BANCO DE DADOS)
+ 
+
+DELETE:
+
+DELETE FROM tipos_produto WHERE codigo = 3;
+(Estamos removendo toda a linha de codigo 3)
+
+ATENÇÃO: se não especificarmos com o WHERE iremos apagar TODA A TABELA.

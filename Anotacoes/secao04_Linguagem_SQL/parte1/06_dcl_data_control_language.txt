@@ -1,0 +1,22 @@
+DCL - Data Control Language
+
+No subgrupo DCL temos 2 comandos: GRANT e REVOKE.
+Este subgrupo da linguagem SQL é utilizado para controlar os aspectos de autorização de dados e lincenças de usuários para controlar quem tem acesso para manipular dados dentro do banco de dados.
+
+
+GRANT: Usado para autorizar um usuário a executar ou setar operações no banco de dados.
+REVOKE: Usado para remover ou restringir a capacidade de um usuário de executar operações.
+
+
+GRANT:
+
+
+GRANT SELECT ON tipos_produto TO eddyyxxyy;
+(Estamos dando permissão de consulta na tabela tipos_produto para o usuário 'eeddyyxxyy')
+
+
+REVOKE:
+
+
+REVOKE CREATE TABLE FROM eddyyxxyy;
+(Estamos tirando a permissão de criação de tabelas no banco de dados do usuário 'eeddyyxxyy')

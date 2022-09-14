@@ -1,0 +1,29 @@
+SQL: Structured Query Language -> Linguagem de Consulta Estruturada.
+
+Mesmo que alguns Bancos de Dados Relacionais tenham a sintaxe/dialeto um pouco diferente em alguns comandos, SQL é a linguagem padrão dos Bancos de Dados Relacionais.
+
+Bancos de Dados que levam SQL no nome:
+- MySQL;
+- PostgreSQL;
+- Microsoft SQL Server;
+- SQLite;
+- Dentre outros...
+
+A linguagem SQL foi inspirada na Álgebra Relacional.
+
+
+A linguagem SQL se divide em 5 subgrupos, cada grupo com os comandos que o grupo se propõe:
+
+- DQL: Data Query Language (Comandos de Consulta de Dados)
+- DML: Data Manipulation Language (Comandos para Manipulação de Dados)
+- DDL: Data Definition Language (Comandos para Definição de Dados)
+- DCL: Data Control Language (Comandos para Controle de Acesso de Dados)
+- DTL: Data Transaction Language (Comandos para Transação de Dados)
+
+
+Cada subgrupo SQL possi comandos próprios de execução e ao executar estes comandos SEMPRE temos como resultado duas coisas:
+
+- O resultado da execução do comando;
+- Uma mensagem de execução que pode ser de sucesso ou de erro.
+
+OBS: Apesar de não obrigatório, costumamos escrever os comandos SQL todos em letra maiúscula, o que ajuda a entender melhor nosso código, já que o que for referente aos comandos SQL estará destacado em maiúsculo e o que for referente aos nossos dados, tabelas, etc, estará em minúsculo.

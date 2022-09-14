@@ -1,0 +1,37 @@
+DQL -> Data Query Language
+
+No subgrupo DQL nós temos apenas 1 comando SQL:
+- SELECT
+
+Este comando é utilizado para realizar consultas no banco de dados.
+
+Embora tenha apenas um comando, a DQL é a parte da SQL mais utilizada. O comando SELECT permite ao usuário especificar uma consulta (query) com uma descrição do resultado esperado. Este comando é composto de várias cláusulas e opções, possibilitando elaborar consultas das mais simples às mais complexas.
+
+
+Por exemplo:
+
+Temos as tabelas:
+
+- produtos (id, descricao, preco, id_tipos_produto)
+- tabela tipos_produto (id, descricao)
+
+SELECT * FROM tipos_produto;
+(Irá mostrar todos as linhas da tabela 'tipos_produtos' e uma mensagem de sucesso)
+
+
+SELECT id, descricao FROM tipo_produto;
+(Funciona da mesma forma que o exemplo anterior, mas desta vez estamos especificando os campos que queremos os dados)
+
+
+SELECT * FROM produtos;
+(Irá mostrar todos as linhas da tabela 'produtos' e uma mensagem de sucesso)
+
+
+SELECT id, descricao, id_tipos_produto FROM produtos;
+(Funciona da mesma forma que o exemplo anterior, mas desta vez estamos especificando os campos que queremos os dados, deixando de lado a coluna de preços)
+
+
+Colocando um alias (apelido) em nome de tabela e campos:
+
+SELECT p.codigo AS cod, p.descricao AS desc, p.preco AS pre FROM produtos AS p;
+(Seleciona a tabela dando apelidos para suas colunas, além de apelidar produtos como p)
