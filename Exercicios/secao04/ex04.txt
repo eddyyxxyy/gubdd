@@ -1,0 +1,7 @@
+4) Quais os comandos do Data Manipulation Language e qual sua utilização?
+
+Os comandos de DML são para inserir, atualizar e excluir dados. São eles:
+
+- INSERT: Que insere dados numa coluna/campo/registro de uma tabela/entidade existente;
+- UPDATE: Que altera os valores de dados em uma ou mais colunas/campos/registros de uma tabela/entidade existente;
+- DELETE: Que é usado para remover registros de uma tabela.

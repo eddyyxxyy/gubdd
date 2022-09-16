@@ -1,0 +1,8 @@
+5) Quais os comandos do Data Definition Language e qual sua utilização?
+
+Os comandos de DDL são para definir o banco de dados, para cria-lo, e para criar tabelas, também para alterar e apagar os dados, o próprio banco ou outros objetos.
+Seus comandos são:
+
+- CREATE: Usado para criar o Banco de Dados, tabelas e outros objetos.
+- ALTER: Usado para alterar a estrutura de tabelas que já existem ou de outro objeto existente em um banco de dados.
+- DROP: Usado para apagar bancos de dados, tabelas e outros objetos.

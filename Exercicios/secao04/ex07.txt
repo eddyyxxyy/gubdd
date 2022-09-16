@@ -1,0 +1,7 @@
+7) Quais os comandos do Data Transaction Language e qual sua utilização?
+
+Os comandos da DTL são para o controle das transações de toda operação que ocorra no Banco de Dados. Seus comandos são:
+
+- BEGIN (ou START TRANSACTION): que é utilizado para marcar o começo de uma transação que pode ser completada ou não.
+- COMMIT: que salva as alterações feitas e finaliza a transação;
+- ROLLBACK: que desfaz as alterações até o ultimo commit realizado.

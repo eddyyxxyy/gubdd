@@ -1,0 +1,4 @@
+1) O que é a linguagem SQL?
+
+O SQL é uma linguagem de programação voltada para Bancos de Dados relacionais, sendo a sigla para Structured Querry Language - Linguagem de Consulta Estruturada.
+Tendo em sua sintaxe comandos para a consulta, manipulação, controle de acesso e permissões, definição e criação de atributos, tabelas e relacionamentos e também controle de transações, ou seja, controle sobre toda e qualquer operação do Banco de Dados SQL.

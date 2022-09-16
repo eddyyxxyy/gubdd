@@ -1,0 +1,8 @@
+2) A linguagem SQL se divide em quantos subgrupos? E quais são eles?
+
+São 5 subgrupos, sendo eles:
+- DQL: Data Querry Language
+- DML: Data Manipulation Language
+- DDL: Data Definition Language
+- DCL: Data Control Language
+- DTL: Data Transaction Language

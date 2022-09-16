@@ -1,0 +1,5 @@
+3) Quais os comandos do Data Query Language e qual sua utilização?
+
+Os comandos de DQL são:
+
+- SELECT: para visualizar os dados contidos no banco de dados. É o comando utilizado para consultas e é o comando mais utilizado, permite ao usuário especificar uma consulta (querry) com uma descrição do resultado esperado.

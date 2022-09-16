@@ -1,0 +1,7 @@
+6) Quais os comandos do Data Control Language e qual sua utilização?
+
+Os comandos da DCL são para controlar o acesso e permissões de usuários no banco de dados.
+Seus comandos são:
+
+- GRANT: que dá acesso às funcionalidades para o usuário realizá-las.
+- REVOKE: que retira o acesso/permissão às funcionalidades de determinado usuário.
