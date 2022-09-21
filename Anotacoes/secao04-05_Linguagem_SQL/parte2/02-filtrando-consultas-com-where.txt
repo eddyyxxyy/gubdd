@@ -1,0 +1,18 @@
+Filtrando Consultas com WHERE
+
+Quando estamos falando de consultas, estamos falando da DQL - Data Query Language.
+
+Sabemos que na linguagem SQL (linguagem dos bancos relacionais) temos 5 subgrupos, sendo eles DQL, DML, DDL, DCL e DTL. Para selecionar todos os dados de uma tabela/entidade, utilizamos:
+
+SELECT * FROM nome_da_tabela;
+
+Neste momento, iremos aprender à como filtrar essa consulta (query) utilizando a cláusula WHERE. (Lembrando que um registro em uma tabela é uma linha).
+
+
+Entendendo o funcionamento da cláusula WHERE:
+
+SELECT * FROM nome_da_tabela WHERE codigo = 1;
+(no exemplo acima, estamos selecionando todos os dados da tabela 'nome_da_tabela' onde o código/id for igual a 1)
+
+SELECT * FROM nome_da_tabela WHERE descricao = 'Laptop';
+(no exemplo acima, estamos selecionando todos os dados da tabela 'nome_da_tabela' onde a descrição for igual a 'Laptop')

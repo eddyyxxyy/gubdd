@@ -1,0 +1,32 @@
+Consultas em Multiplas Tabelas
+
+Em um projeto existem diversas Tabelas/Entidades, por isso estudamos a normalização de dados, para criar as Entidades e Relações entre elas tomamos os devidos cuidados com cada Entidade e seus atributos.
+Por conseguinte, temos diversos dados espalhados pelas Tabelas e para acessá-los as vezes precisamos consultar em mais de uma Tabela em um único query.
+
+As vezes as informações que desejamos estão em MULTIPLAS TABELAS.
+
+Digamos que uma tabela chamada produtos está relacionada em um de seus campos com a tabela tipos_de_produto por meio de uma chave estrangeira que referencia o id da tabela tipos_de_produto.
+
+A tabela produtos tem os campos:
+- id INT PRIMARY KEY NOT NULL AUTO-INCREMENT
+- nome VARCHAR(50)
+- preco DECIMAL(8,2)
+- id_tipos_de_produto INT FOREIGN KEY REFERENCES tipos_de_produto
+
+A tabela tipos_de_produto tem os campos:
+- id INT PRIMARY KEY NOTNULL AUTO-INCREMENT
+- nome VARCHAR(50)
+
+Agora imagine que você deseja fazer uma consulta que traga os seguintes dados:
+- id do produto
+- nome do produto
+- preço do produto
+- nome do tipo do produto
+
+Nota-se que os três primeiros dados que desejamos apresentar estão na tabela produtos e o ultimo está na tabela tipos_de_produto. Podemos realizar essa consulta da seguinte forma:
+
+SELECT p.id as Id, p.nome as Nome, p.preco as Preço, tp.nome as Tipo FROM produtos as p. tipos_de_produto as tp WHERE p.id_tipos_de_produto = tp.id;
+(nossa consulta trará então o resultado esperado, ficando desta forma muito fácil e mais informativo ao verificar qual tipo cada produto e com a sua descrição ao invés do código)
+
+
+OBS: Sempre que houver consulta com múlltiplas tabelas, devemos fazer a filtragem observando as chaves estrangeiras de uma tabela fazendo referência às chaves primárias da outra, independente da quantidade de relacionamentos.
