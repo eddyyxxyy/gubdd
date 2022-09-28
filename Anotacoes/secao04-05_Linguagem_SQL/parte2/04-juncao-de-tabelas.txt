@@ -1,0 +1,44 @@
+Junção de Tabelas
+
+Já sabemos que em um banco de dados podemos ter uma ou mais tabelas relacionadas.
+
+É bastante comum que, ao elaborarmos uma consulta, termos a necessidade de trazer dados de diferentes tabelas (como visto na aula anterior).
+
+Para criarmos essa seleção vista na aula anterior devemos definir os critério de agrupamento para trazer estes dados. Estes critérios são chamados de Junções.
+
+Um junção de tabelas cria uma pseudo-tabela derivada de duas ou mais tabelas de acordo com as regras especificadas, e que são parecidas com as regras da Teoria dos Conjuntos.
+
+
+Junção de produto cartesiano
+
+Uma junção de produto cartesiano é uma junção entre duas tabelas que origina uma terceira tabela constituída por todos os elementos da primeira combinados com todos os elementos da segunda.
+
+SELECT * FROM profissoes, clientes;
+(O código acima nos traria problemas, podemos notar que para cada cliente foi repetido seu nome para cada profissão. Nós já sabemos como resolver isso)
+
+O certo seria:
+
+SELECT c.id, c.nome, c.data_nascimento, c.telefone, p.cargo FROM clientes AS c, profissoes AS p WHERE c.id_profissao = p.id;
+
+
+Junção Interna (Inner Join)
+
+Uma junção interna é caracterizada por uma consulta que retorna apenas os dados que atendem às condições de junção, isto é, quais linhas de uma tabela se relacionam com as linhas de outras tabelas.
+
+Para isso utilizamos a cláusular ON, que é semelhante ao WHERE.
+
+SELECT c.id, c.nome, c.data_nascimento, c.telefone, p.cargo FROM clientes AS c INNER JOIN profissoes as p ON c.id_profissao = p.id;
+(Essa consulta gera o mesmo resultado da consulta acima)
+
+
+Junção externa (OUTER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN)
+
+Uma junção externa é uma consulta que não requer que os registros de uma tabela possuam registros equivalentes em outra.
+Este tipo de junção se subdivide dependendo da tabela do qual admitiremos os registros que não possuem correspondência; a tabela da esquerda, a direita ou ambas, retornando NULL para os valores não correspondentes.
+
+
+Junção Cruzada (CROSS JOIN)
+
+Uma junção que cria para cada registro de uma tabela uma linha com cada registro da outra tabela.
+
+

@@ -1,0 +1,73 @@
+Funções de Agregação
+
+Ao desenvolver sistemas é muito comum que uma aplicação necessite de informações resumidas, como por exemplo obter a menor ou maior venda do dia, o maior salário de um funcionário, o mês que teve mais vendas e etc.
+A linguagem SQL contém diversas funções nativas para esse fim, que podem ser usadas para agregar um conjunto de valores em um único resultado através de uma consulta.
+
+Nesta aula, iremos conhecer as principais funções de agregação da linguagem SQL.
+
+
+Sintaxe:
+
+Uma função de agregaçao processa um conjunto de valores contidos em uma única coluna de uma tabela e retorna um único valor como resultado.
+Sua sintaxe é semelhante aquela utilizada em funções encontradas nas linguagens de programação, contudo o parâmetro de entrada é sempre a coluna cujos valores desejamos processar.
+
+Exemplo:
+
+nome-da-funcao(coluna)
+
+Podermos informar no comando SELECT uma ou mais funções de agregação, de acordo com a necessidade.
+
+
+MAX:
+
+A função MAX retorna o maior valor dentro de uma coluna de uma tabela.
+
+SELECT MAX(preco_venda) FROM produtos;
+(Este comando retornaria o valor máximo da coluna preco_venda, numa tabela de registro único)
+
+SELECT id_categoria, MAX(preco_venda) FROM produtos GROUP BY id_categoria;
+(No comando acima estamos buscando o maior preço de venda em todas as categorias de produtos que temos. Ao final estamos agrupando esses dados pelo id da categoria)
+
+
+OBS: quando utilizamos uma função de agregação em uma consulta juntamente com outros campos devemos sempre utilizar o agrupamento (GROUP BY) por algum elemento da consulta.
+
+
+SELECT id_categoria, MAX(preco_venda) FROM produtos GROUP BY id_categoria HAVING MAX(preco_venda) > 10;
+(No comando acima estamos buscando o maior preço de venda em cada uma das categorias de produtos que temos onde o preço de venda for maior que 10,00. Ao final estamos agrupando pelo id da categoria)
+
+
+
+MIN:
+
+SELECT MIN(preco_venda) FROM produtos;
+(No comando acima a função MIN retorna o menor preço de venda da tabela produtos)
+
+
+SUM:
+
+SELECT SUM(preco_venda) FROM produtos WHERE id_categoria = 1;
+(No comando acima estamos somando todos os preços de venda dos produtos onde a categoria seja igual 1, ou seja, cada produto que tiver o id_categoria igual a 1)
+
+
+AVG:
+
+Com a função AVG podemos calcular a média aritmética dos valores em uma única coluna.
+
+SELECT AVG(preco_venda) FROM produtos;
+(No comando acima estamos calculando a média aritmética dos preços de venda da tabela produtos)
+
+
+ROUND:
+
+Utilizamos a função ROUND para arredondar valores e desta forma especificar com quantas casas decimais queremos apresentar o valor.
+
+SELECT ROUND(AVG(preco_venda), 2) FROM produtos;
+(No comando acima teremos o mesmo resultado da utilização somente com AVG, porém mostrando o valor arredondado com duas casas decimais somente)
+
+
+COUNT:
+
+A função COUNT retorna o total de linhas selecionadas. Podemos passar por parâmetro o nome da coluna ou um asterisco. Por padrão, quando informado o nome de uma coluna, valores do tipo NULL são ignorados, mas quando informado um asterisco (*) todas as linhas são contabilizadas.
+
+SELECT COUNT(preco_venda) AS Quantidade FROM produtos WHERE id_categoria = 1;
+(No comando acima estamos contando quantos produtos da categoria 1 temos cadastrados)

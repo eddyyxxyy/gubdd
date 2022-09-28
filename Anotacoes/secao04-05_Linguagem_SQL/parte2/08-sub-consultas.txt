@@ -1,0 +1,24 @@
+Sub Consultas
+
+De forma geral, grande parte das consultas realizadas em bancos de dados podem ser resolvidas de forma simples. Toda via, existem casos que é necessário aumentar a complexidade destas consultas, até mesmo para facilitar o resultado final e melhorar a leitura destas consultas.
+É aqui que entram as Subconsultas, conhecidas também como Subqueries.
+
+Uma Subconsulta nada mais é do que uma instrução SELECT dentro de outro SELECT que retorna algumas colunas específicas que são usadas em algumas funções como INSERT e UPDATE e DELETE por exemplo.
+É chamada também e consulta interna, enquanto a consulta que contém a subconsulta é chamada de consulta externa.
+
+
+Realizando subconsultas:
+
+SELECT nome, sobrenome
+	FROM funcionarios
+	WHERE id_escritorio IN (SELECT id FROM escritorios WHERE pais = 'Brasil');
+
+No comando acima, quando a consulta é executada, a subconsulta é executada primeiro e retorna o conjunto de resultados especificada nela. Em seguida, esse conjunto de resultados é usado como uma entrada da consulta externa.
+
+E da mesma forma, podemos ter o mesmo resultado do comando acima utilizando um SELECT padrão:
+
+
+SELECT nome, sobrenome
+	FROM funcionarios, escritorios AS e
+WHERE id_escritorio = e.id AND e.pais = 'Brasil';
+

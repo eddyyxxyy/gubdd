@@ -1,0 +1,21 @@
+Funçõe de Agrupamento e Ordenação
+
+Durante o desenvolvimento de aplicações as vezes faz-se necessário agrupar e/ou ordenar os resultados para uma melhor apresentação.
+A linguagem SQL provê recursos para realizar estas operações.
+
+
+GROUP BY:
+
+Utilizamos a cláusula GROUP BY para agrupar elementos de um mesmo tipo
+
+SELECT t.nome AS TIPO, SUM(p.quantidade) AS 'Quantidade em Estoque' FROM tipos AS t, produtos AS p WHERE t.id = p.id_tipo GROUP BY t.nome;
+(No comando acima estamos solicitando a quantidade de produtos em estoque, agrupados pelo tipo. Utilizamos a função de agregação SUM() para efetuar a soma de cada tipo de produto)
+
+
+SELECT f.nome AS Fabricante, SUM(p.quantidade) AS 'Quantidade em Estoque' FROM fabricantes AS f, produtos AS p WHERE f.id = p.id_fabricante GROUP BY f.nome;
+(Na consulta acima estamos solicitando a quantidade de produtos de cada fabricante, agrupando-os por nome de fabricante)
+
+
+ORDER BY:
+
+A cláusula ORDER BY organiza os dados em ordem alfabética ou numérica. A ordenação pode ser ASC ou DESC e por padrão, a ordenação é ASC, ou seja, do menor pro maior.

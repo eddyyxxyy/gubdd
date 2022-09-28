@@ -1,0 +1,58 @@
+Funções de Data e Hora
+
+No comando SELECT há diversas funções que foram embutidas para facilitar o manuseio de alguns tipos de dados em determinadas condições. Estas funções são particularmente úteis a programadores de aplicativos, uma vez que dependeriam de algum algoritmo, sem ter que escrever código na linguagem fonte do aplicativo para tais recursos.
+Algumas destas funções são para se trabalhar com data e hora, e agora vamos conhecer as principais.
+
+OBS: Esses comandos podem ser utilizados em uma base de dados mas não são dependentes de bases de dados.
+
+
+CURDATE():
+
+Função que retorna a data atual no formato aaaa-mm-dd
+
+SELECT CURDATE() AS 'Data Atual';
+
+
+CURTIME() ou CURRENT_TIME():
+
+Função que retorna a hora atual no formato hh-mm-ss
+
+SELECT CURTIME() AS 'Hora atual';
+
+
+DATE_ADD(data, intervalo):
+
+Função que adiciona um intervalo à data. O intervalo pode ser uma data seguida de um horário. O intervalo a ser somado pode ser em dias, dias e horas e minutis, dias e segundos, minutos e segundos e etc.
+
+SELECT DATE_ADD(CURDATE(), INTERVAL 3 DAY) AS 'Data de Vencimento;
+(No exemplo acima estamos adicionando 3 dias na data atual)
+
+
+DATE_SUB(data, intervalo):
+
+Faz a mesma coisa que a função acima, porém subtraindo em vez de adicionar.
+
+
+DATEDIFF(expressao1, expressao2):
+
+Retorna o valor da diferença entre 'expressao1' e 'expressao2', podendo ambas serem uma data ou data e horario.
+
+SELECT DATEDIFF(CURDATE(), DATE_SUB(CURDATE(), INTERVAL 10 DAY)) AS 'Dias em atraso';
+(No comando acima estamos calculando o atraso em dias de uma data 10 dias no passado para a data atual)
+
+
+DATE_FORMAT(data, formato):
+
+SELECT DATE_FORMAT(CURDATE(), '%d/%m/%Y') AS 'Data Formatada';
+(Retornaremos com o comando acima a data atual formatada no padrão dd/mm/yyyy)
+
+
+DAYNAME(data):
+
+SELECT DAYNAME(CURDATE()) AS 'Dia da semana';
+
+Com o comando acima temos o dia da semana da data corrente. Para gerar os nomes em português, antes mesmo de fazer a consulta, usamos:
+
+SET lc_time_names = 'pt_BR';
+SELECT DAYNAME(CURDATE()) AS 'Dia da semana';
+
