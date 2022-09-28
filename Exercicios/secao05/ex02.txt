@@ -1,0 +1,3 @@
+2) Por que as vezes precisamos fazer consultas em múltiplas tabelas?
+
+Pois muitas vezes precisamos pegar dados que estão em mais de uma tabela e os relacionar por meio de condições para explicitar alguma informação que desejamos combinando as duas ou mais tabelas.

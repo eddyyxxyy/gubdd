@@ -1,0 +1,3 @@
+3) O que é a junção de tabelas?
+
+A Junção de Tabelas nada mais é do que juntar duas tabelas numa operação do banco de dados para obter uma consulta que explicita uma informação que buscamos. Existem diversos tipos de junção de tabelas, como a de produto cartesiano, que gera uma terceira tabela constituída de todos os elementos da primeira e da segunda tabela combinados. Porém, é importante frizar que o uso da cláusula WHERE é a que nos previnirá de erros na consulta, impedindo a duplicidade dos dados apresentados na consulta. A Junção Interna opera de forma semelhante à consultas com a cláusula WHERE, porem utiliza o comando INNER JOIN e ON.

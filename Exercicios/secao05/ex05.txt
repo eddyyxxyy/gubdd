@@ -1,0 +1,3 @@
+5) Por que as vezes precisamos agrupar resultados?
+
+Pois durante o desenvolvimento de aplicações, as vezes faz-se necessário agrupar e/ou ordenar os resultados para uma melhor representação dos dados. Temos o GROUP BY e ORDER BY por exemplo, que agrupam e ordenam os dados para que possamos representa-los de forma melhor.

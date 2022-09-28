@@ -1,0 +1,7 @@
+1) Qual a necessidade de se utilizar a cláusula WHERE em uma consulta?
+
+Para especificar quais os campos que gerarão uma consulta estruturada que obedecerá à determinação da condição que o WHERE está aplicando. Como por exemplo:
+
+SELECT c.nome, c.id_antendente FROM clientes AS c, funcionarios AS f WHERE c.id_atendente = f.id;
+
+No comando acima iremos pegar todas as informações de clientes e estruturar a tabela mostrando para cada cliente o seu atendente específico.

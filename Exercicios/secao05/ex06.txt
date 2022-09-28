@@ -1,0 +1,3 @@
+6) Qual é a forma padrão de ordenação de resultados em uma consulta?
+
+Por padrão a linguagem SQL sempre ordena de forma ascendente, ASC.

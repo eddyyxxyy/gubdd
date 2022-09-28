@@ -1,0 +1,5 @@
+7) Cite 3 funções de dada e hora.
+
+CURDATE() que nos mostra a data atual.
+CURTIME() que nos apresenta o horário atual.
+DATE_ADD(data, intervalo) que adiciona um intervalo à uma data.

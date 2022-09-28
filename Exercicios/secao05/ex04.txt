@@ -1,0 +1,3 @@
+4) O que são funções de agregação? Cite 3 que você ache mais importantes.
+
+As funções de agregação processam um conjunto de dados contidos em uma única coluna de uma tabela e retorna o valor dessa comparação. Por exemplo, temos o MAX que retorna o valor máximo de uma coluna em uma tabela, o MIN que faz o inverso do MAX e o AVG que nos retorna a média da coluna.
