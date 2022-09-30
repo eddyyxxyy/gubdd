@@ -1,0 +1,9 @@
+Introdução ao MySQL
+
+O MySQL foi criado nos anos 90, em 1995 pela MySQL AB e se trata de um SGDB (Sistema Gerenciador de Banco de Dados) relacional. Junto do PHP dominaram a internet por um bom período.
+
+Desde seu lançamento é Open Source e tem seu código fonte desenvolvido em C e C++.
+
+O MariaDB é um fork do MySQL quando ainda era Open Source, para manter o projeto Open Source e adicionar suas próprias melhorias.
+
+Neste curso iremos utilizar o MySQL, por mais que haja compatibilidade entre o MariaDB e MySQL.
