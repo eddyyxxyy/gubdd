@@ -26,12 +26,15 @@ CREATE TABLE pessoas (
     PRIMARY KEY (id)
 );
 
+# O INSERT INTO é DML
 INSERT INTO pessoas (nome) VALUES ('Felicity Jones');
 
 SELECT * FROM pessoas;
 
--- ALTER
+-- ALTER é DDL
 ALTER TABLE pessoas ADD ano_nascimento INT;
 ALTER TABLE pessoas ADD mes_nascimento INT NOT NULL;
 
+-- O UPDATE é DML
 UPDATE pessoas SET mes_nascimento = 6 WHERE id = 1;
+
